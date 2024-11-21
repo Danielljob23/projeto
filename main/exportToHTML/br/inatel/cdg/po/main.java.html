@@ -1,0 +1,110 @@
+<html>
+<head>
+<title>main.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #6aab73;}
+.s4 { color: #2aacb8;}
+.s5 { color: #7a7e85;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+main.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">br</span><span class="s2">.</span><span class="s1">inatel</span><span class="s2">.</span><span class="s1">cdg</span><span class="s2">.</span><span class="s1">po</span><span class="s2">;</span>
+
+<span class="s0">import </span><span class="s1">java</span><span class="s2">.</span><span class="s1">util</span><span class="s2">.</span><span class="s1">Scanner</span><span class="s2">;</span>
+
+<span class="s0">public class </span><span class="s1">main </span><span class="s2">{</span>
+    <span class="s0">public static void </span><span class="s1">main</span><span class="s2">(</span><span class="s1">String</span><span class="s2">[] </span><span class="s1">args</span><span class="s2">) {</span>
+        <span class="s1">Scanner scanner </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Scanner</span><span class="s2">(</span><span class="s1">System</span><span class="s2">.</span><span class="s1">in</span><span class="s2">);</span>
+
+        <span class="s1">Cliente cliente </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Cliente</span><span class="s2">();</span>
+        <span class="s1">cliente</span><span class="s2">.</span><span class="s1">nome </span><span class="s2">= </span><span class="s3">&quot;PC Mania&quot;</span><span class="s2">;</span>
+
+
+        <span class="s1">Computador computador1 </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Computador</span><span class="s2">();</span>
+        <span class="s1">Computador computador2 </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Computador</span><span class="s2">();</span>
+        <span class="s1">Computador computador3 </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Computador</span><span class="s2">();</span>
+
+        <span class="s1">computador1</span><span class="s2">.</span><span class="s1">marca </span><span class="s2">= </span><span class="s3">&quot;Positivo&quot;</span><span class="s2">;</span>
+        <span class="s1">computador2</span><span class="s2">.</span><span class="s1">marca </span><span class="s2">= </span><span class="s3">&quot;Acer&quot;</span><span class="s2">;</span>
+        <span class="s1">computador3</span><span class="s2">.</span><span class="s1">marca </span><span class="s2">= </span><span class="s3">&quot;Vaio&quot;</span><span class="s2">;</span>
+
+        <span class="s1">computador1</span><span class="s2">.</span><span class="s1">preco </span><span class="s2">= </span><span class="s4">9754</span><span class="s2">;</span>
+        <span class="s1">computador2</span><span class="s2">.</span><span class="s1">preco </span><span class="s2">= </span><span class="s4">1234 </span><span class="s2">+</span><span class="s4">9754</span><span class="s2">;</span>
+        <span class="s1">computador3</span><span class="s2">.</span><span class="s1">preco </span><span class="s2">= </span><span class="s4">5678</span><span class="s2">+</span><span class="s4">9754</span><span class="s2">;</span>
+
+        <span class="s1">SistemaOperacional sistemaOperacional1 </span><span class="s2">= </span><span class="s0">new </span><span class="s1">SistemaOperacional</span><span class="s2">();</span>
+        <span class="s1">SistemaOperacional sistemaOperacional2 </span><span class="s2">= </span><span class="s0">new </span><span class="s1">SistemaOperacional</span><span class="s2">();</span>
+        <span class="s1">SistemaOperacional sistemaOperacional3 </span><span class="s2">= </span><span class="s0">new </span><span class="s1">SistemaOperacional</span><span class="s2">();</span>
+
+        <span class="s1">sistemaOperacional1</span><span class="s2">.</span><span class="s1">nome </span><span class="s2">= </span><span class="s3">&quot;Linux Ubuntu&quot;</span><span class="s2">;</span>
+        <span class="s1">sistemaOperacional2</span><span class="s2">.</span><span class="s1">nome </span><span class="s2">= </span><span class="s3">&quot;Windows 8&quot;</span><span class="s2">;</span>
+        <span class="s1">sistemaOperacional3</span><span class="s2">.</span><span class="s1">nome </span><span class="s2">= </span><span class="s3">&quot;Windows 10&quot;</span><span class="s2">;</span>
+
+        <span class="s1">sistemaOperacional1</span><span class="s2">.</span><span class="s1">tipo </span><span class="s2">= </span><span class="s4">32</span><span class="s2">;</span>
+        <span class="s1">sistemaOperacional2</span><span class="s2">.</span><span class="s1">tipo </span><span class="s2">= </span><span class="s4">64</span><span class="s2">;</span>
+
+        <span class="s1">sistemaOperacional3</span><span class="s2">.</span><span class="s1">tipo </span><span class="s2">= </span><span class="s4">64</span><span class="s2">;</span>
+
+        <span class="s1">MemoriaUSB memoriaUSB1 </span><span class="s2">= </span><span class="s0">new </span><span class="s1">MemoriaUSB</span><span class="s2">();</span>
+        <span class="s1">MemoriaUSB memoriaUSB2 </span><span class="s2">= </span><span class="s0">new </span><span class="s1">MemoriaUSB</span><span class="s2">();</span>
+        <span class="s1">MemoriaUSB memoriaUSB3 </span><span class="s2">= </span><span class="s0">new </span><span class="s1">MemoriaUSB</span><span class="s2">();</span>
+
+        <span class="s1">memoriaUSB1</span><span class="s2">.</span><span class="s1">nome </span><span class="s2">= </span><span class="s3">&quot;Pen-drive&quot;</span><span class="s2">;</span>
+        <span class="s1">memoriaUSB2</span><span class="s2">.</span><span class="s1">nome </span><span class="s2">= </span><span class="s3">&quot;Pen-drive&quot;</span><span class="s2">;</span>
+        <span class="s1">memoriaUSB3</span><span class="s2">.</span><span class="s1">nome </span><span class="s2">= </span><span class="s3">&quot;HD externo&quot;</span><span class="s2">;</span>
+
+        <span class="s1">memoriaUSB1</span><span class="s2">.</span><span class="s1">capacidade </span><span class="s2">=</span><span class="s4">16</span><span class="s2">;</span>
+        <span class="s1">memoriaUSB2</span><span class="s2">.</span><span class="s1">capacidade </span><span class="s2">= </span><span class="s4">32</span><span class="s2">;</span>
+        <span class="s1">memoriaUSB3</span><span class="s2">.</span><span class="s1">capacidade </span><span class="s2">= </span><span class="s4">1000</span><span class="s2">;</span>
+
+        <span class="s1">HardwareBasico hardwareBasico1 </span><span class="s2">= </span><span class="s0">new </span><span class="s1">HardwareBasico</span><span class="s2">();</span>
+        <span class="s1">HardwareBasico hardwareBasico2 </span><span class="s2">= </span><span class="s0">new </span><span class="s1">HardwareBasico</span><span class="s2">();</span>
+        <span class="s1">HardwareBasico hardwareBasico3 </span><span class="s2">= </span><span class="s0">new </span><span class="s1">HardwareBasico</span><span class="s2">();</span>
+
+        <span class="s1">hardwareBasico1</span><span class="s2">.</span><span class="s1">nome </span><span class="s2">= </span><span class="s3">&quot;Pentium core i3&quot;</span><span class="s2">;</span>
+        <span class="s1">hardwareBasico2</span><span class="s2">.</span><span class="s1">nome </span><span class="s2">= </span><span class="s3">&quot;Pentium core i5&quot;</span><span class="s2">;</span>
+        <span class="s1">hardwareBasico3</span><span class="s2">.</span><span class="s1">nome </span><span class="s2">= </span><span class="s3">&quot;Pentium core i7&quot;</span><span class="s2">;</span>
+
+        <span class="s1">hardwareBasico1</span><span class="s2">.</span><span class="s1">capacidade </span><span class="s2">= </span><span class="s4">2200</span><span class="s2">;</span>
+        <span class="s1">hardwareBasico2</span><span class="s2">.</span><span class="s1">capacidade </span><span class="s2">= </span><span class="s4">3370</span><span class="s2">;</span>
+        <span class="s1">hardwareBasico3</span><span class="s2">.</span><span class="s1">capacidade </span><span class="s2">= </span><span class="s4">4500</span><span class="s2">;</span>
+
+        <span class="s0">while </span><span class="s2">(</span><span class="s0">int </span><span class="s1">opcao </span><span class="s2">!= </span><span class="s4">0</span><span class="s2">) {</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Escolha a promoção que deseja comprar (1, 2, 3) ou 0 para sair:&quot;</span><span class="s2">);</span>
+            <span class="s1">opcao </span><span class="s2">= </span><span class="s1">scanner</span><span class="s2">.</span><span class="s1">nextInt</span><span class="s2">();</span>
+
+            <span class="s0">switch </span><span class="s2">(</span><span class="s1">opcao</span><span class="s2">) {</span>
+                <span class="s0">case </span><span class="s4">1</span><span class="s2">:</span>
+                    <span class="s1">cliente</span><span class="s2">.</span><span class="s1">addcomputadores</span><span class="s2">(</span><span class="s1">computador1</span><span class="s2">);</span>
+                    <span class="s0">break</span><span class="s2">;</span>
+                <span class="s0">case </span><span class="s4">2</span><span class="s2">:</span>
+                    <span class="s1">cliente</span><span class="s2">.</span><span class="s1">addcomputadores</span><span class="s2">(</span><span class="s1">computador2</span><span class="s2">);</span>
+                    <span class="s0">break</span><span class="s2">;</span>
+                <span class="s0">case </span><span class="s4">3</span><span class="s2">:</span>
+                    <span class="s1">cliente</span><span class="s2">.</span><span class="s1">addcomputadores</span><span class="s2">(</span><span class="s1">computador3</span><span class="s2">);</span>
+                    <span class="s0">break</span><span class="s2">;</span>
+                <span class="s0">case </span><span class="s4">0</span><span class="s2">:</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Finalizando compras.&quot;</span><span class="s2">);</span>
+                    <span class="s0">break</span><span class="s2">;</span>
+                <span class="s0">default</span><span class="s2">:</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Opção inválida.&quot;</span><span class="s2">);</span>
+            <span class="s2">}</span>
+        <span class="s2">}</span>
+
+        <span class="s5">// Mostrar compras do cliente</span>
+        <span class="s1">cliente</span><span class="s2">.</span><span class="s1">mostraCompras</span><span class="s2">();</span>
+
+        <span class="s1">scanner</span><span class="s2">.</span><span class="s1">close</span><span class="s2">();</span>
+    <span class="s2">}</span>
+<span class="s2">}</span></pre>
+</body>
+</html>
