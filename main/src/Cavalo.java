@@ -1,10 +1,12 @@
-public class Cavalo extends Animal
-{
+public class Cavalo extends Animal {
     private double velocidade;
+
     public Cavalo(String nome, int idade, String cor) {
         super(nome, idade, cor);
         this.velocidade = 40.0; // Velocidade padrão em km/h
+        this.preco = 10000;
     }
+
     public void setVelocidade(double velocidade) {
         this.velocidade = velocidade;
     }
@@ -20,13 +22,7 @@ public class Cavalo extends Animal
 
     @Override
     public void Calculapreco() {
-        if (idade >= 1 && idade <= 5) {
-    preco = 1000;
-} else if (idade > 5) {
-    preco = 2500;
-}
+        preco = 10000; //Preço cavalo
         System.out.println("O preço final do " + nome + " é: R$ " + preco);
-}
-
     }
-
+}
